@@ -1,0 +1,40 @@
+<!-- server/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESM run in browser</title>
+</head>
+
+<body>
+    <!-- 注意需要先通过 `importmap` 引入 npm 包的 CDN -->
+    <script type="importmap">
+        {
+          "imports": {
+            "md5": "https://esm.run/md5"
+          }
+        }
+      </script>
+    <script type="module" src="./index.mjs"></script>
+    <!-- 标签内的代码就是 src/esm/index.mjs 的代码 -->
+    <!-- <script type="module">
+        import {
+          foo as foo2, // 这里进行了重命名
+          bar,
+        } from './module.mjs'
+  
+        // 就不会造成变量冲突
+        const foo = 1
+        console.log(foo)
+  
+        // 用新的命名来调用模块里的方法
+        foo2()
+  
+        // 这个不冲突就可以不必处理
+        console.log(bar)
+      </script> -->
+</body>
+
+</html>

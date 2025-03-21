@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "dev": "node index",
-      "dev:cjs": "node src/cjs/index.cjs",
-      "dev:esm": "node src/esm/index.mjs"
+    "serve": "node server/index.js",
+    "dev": "node index",
+    "dev:cjs": "node src/cjs/index.cjs",
+    "dev:esm": "node src/esm/index.mjs"
   },
   "keywords": [],
   "author": "",
