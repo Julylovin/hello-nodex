@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "dev": "node index"
+      "dev": "node index",
+      "dev:cjs": "node src/cjs/index.cjs"
   },
   "keywords": [],
   "author": "",
