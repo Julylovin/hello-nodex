@@ -31,5 +31,10 @@ foo2();
 // 这个不冲突就可以不必处理
 console.log(bar);
 
-import md5 from "md5";
-console.log(md5("Hello World"));
+ 
+// src/esm/index.mjs
+import md5 from 'md5'
+
+const before = 'Hello World'
+const after = md5(before)
+console.log({ before, after })
