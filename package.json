@@ -6,6 +6,7 @@
   "scripts": {
     "serve": "node server/index.js",
     "dev": "node index",
+    "dev:ts": "ts-node src/ts/index.ts",
     "dev:cjs": "node src/cjs/index.cjs",
     "dev:esm": "node src/esm/index.mjs",
     "compile": "babel src/babel --out-dir compiled"
@@ -19,6 +20,8 @@
   "devDependencies": {
     "@babel/cli": "^7.27.0",
     "@babel/core": "^7.26.10",
-    "@babel/preset-env": "^7.26.9"
+    "@babel/preset-env": "^7.26.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
   }
 }
