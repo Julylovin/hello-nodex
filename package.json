@@ -9,6 +9,7 @@
     "dev:ts": "ts-node src/ts/index.ts",
     "dev:cjs": "node src/cjs/index.cjs",
     "dev:esm": "node src/esm/index.mjs",
+    "build": "tsc src/ts/index.ts --skipLibCheck --outDir dist",
     "compile": "babel src/babel --out-dir compiled"
   },
   "keywords": [],
